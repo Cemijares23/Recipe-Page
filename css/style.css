@@ -1,0 +1,198 @@
+:root {
+    /* Colors */
+    /* Primary */
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+
+    /* Fonts */
+    --mainFont: "Young Serif", serif;
+    --secundaryFont: "Outfit", sans-serif;
+}
+
+/* Global */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--secundaryFont);
+    color: var(--darkCharcoal);
+    background-color: var(--eggshell);
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: var(--mainFont);
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+h2 {
+    font-size: 2.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--wengeBrown);
+}
+
+
+ul, ol {
+    line-height: 1.8;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+
+li {
+    padding-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    li {
+        padding-left: 2rem;
+    }
+}
+
+.container {
+    max-width: 74rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 12rem auto;
+    }
+}
+
+/* Blog */
+.blog {
+    background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+    .blog {
+        padding: 4rem;
+        border-radius: 3rem;
+    }
+}
+
+.blog__image {
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .blog__image {
+        border-radius: 1.5rem;
+    }
+}
+
+.blog__content{
+    padding: 0 3rem;
+}
+
+@media (min-width: 768px) {
+    .blog__content {
+        padding: 0;
+    }
+}
+
+/* Preparation */
+.preparation {
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: var(--darkRaspberry);
+    background-color: var(--roseWhite);
+}
+
+.preparation__title {
+    font-family: var(--secundaryFont);
+    font-size: 2rem;
+    font-weight: 650;
+    margin-top: 0;
+}
+
+
+
+/* Entries */
+.entry {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--lightGrey);
+}
+.entry:last-of-type {
+    border: 0;
+    padding: 0;
+}
+
+.ingredients,
+.instructions {
+    color: var(--nutmeg);
+}
+
+.instructions__list {
+    font-weight: bold;
+}
+.list__text {
+    font-weight: normal;
+}
+
+/* Nutrition */
+.nutrition__title {
+    color: var(--nutmeg);
+}
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 4rem;
+    border-bottom: 1px solid var(--lightGrey);
+}
+.table:last-of-type {
+    border: 0;
+}
+
+.table__data {
+    font-weight: bold;
+    color: var(--nutmeg);
+}
+
+.list__title,
+.list__text {
+    color: var(--wengeBrown);
+}
+.list__title {
+    font-weight: bold;
+}
+
+
+.attribution { font-size: 1.2rem; text-align: center; margin: 1rem 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
